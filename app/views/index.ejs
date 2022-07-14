@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%=name%>さん
+    <ul>
+        <% id.forEach(c => {%>
+            <li>
+                 <a href="/download?name=<%= c.namae %>">   <%=c.namae%>(<%=c.size%>KB)</a>
+            </li>
+        <% }) %>
+    </ul>
+</head>
+</html>
